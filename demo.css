@@ -1,0 +1,31 @@
+body {
+	font-family: "Helvetica Neue", Helvetica, sans-serif;
+	background: #eee;
+	color: #222;
+}
+
+h1 {
+	font-size: 1.8em;
+	margin: 1em 50px;
+}
+
+#airlock {
+	font-size: 1.2em;
+	margin: 2em 50px;
+	padding: 1em 2em;
+	width: 33em;
+	font-family: Garamond, Georgia, serif;
+	background: #F8E5CB;
+	border: 1px solid #D8A56E;
+	border-top-color: #FDFDBE;
+	border-left-color: #FDFDBE;
+	box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+	-webkit-box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+	-moz-box-shadow: 5px 5px 25px rgba(0,0,0,0.5);
+}
+
+.smallmap {
+    width: 512px;
+    height: 256px;
+    border: 1px solid #ccc;
+}

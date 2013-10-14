@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>JS Geolocation Plugin for Annotator test</title>
+
+    <!-- Annotator -->
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.7/jquery.min.js"></script>
+	<script src="http://assets.annotateit.org/annotator/v1.2.7/annotator-full.min.js"></script>
+	<link rel="stylesheet" href="http://assets.annotateit.org/annotator/v1.2.7/annotator.min.css">
+	
+	<!-- RichText Pluging -->
+	<script src="lib/tinymce/tinymce.min.js"></script><!--tinymce for richText-->
+	<script src="src/richText-annotator.js"></script>
+	<link href="src/richText-annotator.css" rel="stylesheet">
+	
+	<!-- Demo CSS -->
+	<link href="demo.css" rel="stylesheet">
+  </head>
+
+  <body style="margin:10px">
+    <header>
+      <h1>JavaScript to Test RichText plugin for Annotator</h1>
+    </header>
+    
+    <div id="airlock">
+      <p><strong>Pellentesque habitant morbi tristique</strong> senectus et netus et malesuada fames ac turpis egestas. Vestibulum tortor quam, feugiat vitae, ultricies eget, tempor sit amet, ante. Donec eu libero sit amet quam egestas semper. <em>Aenean ultricies mi vitae est.</em> Mauris placerat eleifend leo. Quisque sit amet est et sapien ullamcorper pharetra. Vestibulum erat wisi, condimentum sed, <code>commodo vitae</code>, ornare sit amet, wisi. Aenean fermentum, elit eget tincidunt condimentum, eros ipsum rutrum orci, sagittis tempus lacus enim ac dui. <a href="#">Donec non enim</a> in turpis pulvinar facilisis. Ut felis.</p>
+      
+    <script>
+    	var optionsRichText = {
+    		tinymce:{
+				selector: "li.annotator-item textarea",
+				plugins: "media image insertdatetime link code",
+				menubar: false,
+				toolbar_items_size: 'small',
+				extended_valid_elements : "iframe[src|frameborder|style|scrolling|class|width|height|name|align|id]",
+				toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media rubric | code ",
+    		}
+		};
+    	$('#airlock').annotator().annotator('addPlugin','RichText',optionsRichText)
+    		.annotator('addPlugin','Store',{
+				prefix: 'http://danielcebrian.com/annotations/api',
+				
+				annotationData: {uri:'http://danielcebrian.com/richText-annotation/demo.html'},
+
+				loadFromSearch:{
+					limit:10000000,
+					uri: 'http://danielcebrian.com/richText-annotation/demo.html',
+				}
+			});
+    </script>
+  </body>
+
+
+</html>
