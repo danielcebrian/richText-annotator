@@ -4,7 +4,10 @@ RichText Annotator Plugin
 
 richText-annotator.js is a plugin for Annotator to expand the posibilities typing annotations. For this task, the RichText plugin is using the [Tinymce plugin](http://www.tinymce.com/) replaced by plain text field.
 
-The rich media give you the possibility to add pictures, movies, sounds, rich text... in your annotations.
+The rich media give you the possibility to add pictures, movies, sounds, rich text... in your annotations. The code is written in javascript/jquery, but you can translate to coffee using [js2coffee](http://js2coffee.org/), the language used in Annotator.
+
+This plugin will be used in [Open Video Annotation tool](http://www.openvideoannotation.org/). 
+A project supported by [Center for Hellenic Studies](http://chs.harvard.edu/), at [Harvard University](http://www.harvard.edu/) and the [Becas Talentia](http://www.juntadeandalucia.es/economiainnovacionyciencia/talentia/) program from the Junta de Andalucia, Spain.
 
 ##Live-Demo
 
