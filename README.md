@@ -40,7 +40,6 @@ Furthermore, you will need to create an instance of Annotator with the plugin, a
 
 ```js
 	<script>
-		var 
     	var optionsRichText = {
     		tinymce:{
 				selector: "li.annotator-item textarea",
