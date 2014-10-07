@@ -50,7 +50,7 @@ Furthermore, you will need to create an instance of Annotator with the plugin, a
 				toolbar: "insertfile undo redo | styleselect | bold italic | alignleft aligncenter alignright alignjustify | bullist numlist outdent indent | link image media rubric | code ",
     		}
 		};
-    	$('#div_id').annotator().annotator('addPlugin','richText',optionsRichText);
+    	$('#div_id').annotator().annotator('addPlugin','RichText',optionsRichText);
     </script>
 ```
 
